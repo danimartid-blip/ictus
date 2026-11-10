@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a66a0"/>
+      <stop offset="100%" stop-color="#163a5c"/>
+    </linearGradient>
+    <clipPath id="rounded"><rect width="512" height="512" rx="118"/></clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect width="512" height="512" fill="url(#bg)"/>
+    <!-- moneda -->
+    <circle cx="256" cy="256" r="168" fill="#c9972b"/>
+    <circle cx="256" cy="256" r="140" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="8"/>
+    <!-- cruz -->
+    <rect x="234" y="140" width="44" height="232" rx="10" fill="#ffffff"/>
+    <rect x="176" y="198" width="160" height="44" rx="10" fill="#ffffff"/>
+  </g>
+</svg>

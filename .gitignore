@@ -1,0 +1,6 @@
+node_modules/
+# Vistas previas y cualquier archivo con datos reales: este repo es público.
+tmp-*
+*.json.local
+datos/
+.claude/

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a66a0"/>
+      <stop offset="100%" stop-color="#163a5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <!-- todo dentro del 60% central: los launchers recortan el borde -->
+  <circle cx="256" cy="256" r="128" fill="#c9972b"/>
+  <circle cx="256" cy="256" r="106" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="6"/>
+  <rect x="239" y="168" width="34" height="176" rx="8" fill="#ffffff"/>
+  <rect x="195" y="212" width="122" height="34" rx="8" fill="#ffffff"/>
+</svg>

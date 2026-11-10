@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tesorería ICTUS</title>
+<meta name="theme-color" content="#1f4e79">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/styles.css?v=202611101200">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-top">
+    <div>
+      <div class="hero-kicker">Iglesia Cristo tu Único Salvador</div>
+      <h1>Tesorería</h1>
+    </div>
+    <div class="hero-acciones">
+      <select id="selAnio" class="sel-anio" aria-label="Año"></select>
+      <button class="icon-btn" id="btnActualizar" aria-label="Actualizar" title="Actualizar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+      </button>
+      <button class="icon-btn" id="btnSalir" aria-label="Cerrar sesión" title="Cerrar sesión">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container" id="vista">
+  <div class="cargando">Cargando los libros…</div>
+</main>
+
+<button class="fab" id="fab" hidden aria-label="Agregar">+</button>
+
+<nav class="tabs" aria-label="Secciones">
+  <a href="#inicio" data-tab="inicio">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    <span>Inicio</span>
+  </a>
+  <a href="#movimientos" data-tab="movimientos">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+    <span>Tesorería</span>
+  </a>
+  <a href="#diezmos" data-tab="diezmos">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9.5h4.5a2 2 0 0 1 0 4H9.5a2 2 0 0 0 0 0"/></svg>
+    <span>Diezmos</span>
+  </a>
+  <a href="#tramite" data-tab="tramite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-7 10 7z"/></svg>
+    <span>Cuenta</span>
+  </a>
+</nav>
+
+<div class="hoja-fondo" id="hojaFondo" hidden></div>
+<section class="hoja" id="hoja" hidden role="dialog" aria-modal="true">
+  <div class="hoja-asa"></div>
+  <div id="hojaCuerpo"></div>
+</section>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="js/config.js?v=202611101200"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="js/sheets-auth.js?v=202611101200"></script>
+<script src="js/libros.js?v=202611101200"></script>
+<script src="js/app.js?v=202611101200"></script>
+</body>
+</html>
