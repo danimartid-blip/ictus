@@ -4,26 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tesorería ICTUS</title>
-<meta name="theme-color" content="#1f4e79">
+<meta name="theme-color" content="#111111">
 <meta name="robots" content="noindex">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="icon" href="icons/favicon-32.png" type="image/png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<link rel="stylesheet" href="css/styles.css?v=202611101200">
+<link rel="stylesheet" href="css/styles.css?v=202611110015">
 </head>
 <body class="splash-body">
 
 <div class="splash">
-  <img class="splash-icon" src="icons/icon-512.png" alt="" width="84" height="84">
+  <img class="splash-logo" src="icons/logo.png" alt="ICTUS" width="231" height="157">
   <h1>Tesorería ICTUS</h1>
   <p id="statusText">Conecta tu cuenta de Google para ver los libros.</p>
   <button class="btn-primary" id="loginBtn">Conectar con Google</button>
+  <button class="btn-sec" id="btnInstalar" hidden>Instalar como app</button>
   <p class="splash-nota">Los datos se leen directo desde las planillas privadas de Drive. Nada queda guardado en este sitio.</p>
 </div>
 
-<script src="js/config.js?v=202611101200"></script>
+<script src="js/config.js?v=202611110015"></script>
 <script src="https://accounts.google.com/gsi/client" async defer></script>
-<script src="js/sheets-auth.js?v=202611101200"></script>
-<script src="js/login.js?v=202611101200"></script>
+<script src="js/sheets-auth.js?v=202611110015"></script>
+<script src="js/login.js?v=202611110015"></script>
+<script src="js/pwa.js?v=202611110015"></script>
 </body>
 </html>

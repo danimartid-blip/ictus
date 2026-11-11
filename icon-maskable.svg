@@ -1,14 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2a66a0"/>
-      <stop offset="100%" stop-color="#163a5c"/>
-    </linearGradient>
-  </defs>
-  <rect width="512" height="512" fill="url(#bg)"/>
+  <rect width="512" height="512" fill="#111111"/>
   <!-- todo dentro del 60% central: los launchers recortan el borde -->
-  <circle cx="256" cy="256" r="128" fill="#c9972b"/>
-  <circle cx="256" cy="256" r="106" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="6"/>
-  <rect x="239" y="168" width="34" height="176" rx="8" fill="#ffffff"/>
-  <rect x="195" y="212" width="122" height="34" rx="8" fill="#ffffff"/>
+  <g transform="translate(256 262) scale(0.72) translate(-256 -262)">
+    <path d="M256 438C128 352 72 276 72 196c0-64 48-112 108-112 34 0 62 18 76 46 14-28 42-46 76-46 60 0 108 48 108 112 0 80-56 156-184 242z"
+          fill="none" stroke="#fff970" stroke-width="30" stroke-linejoin="round"/>
+    <rect x="236" y="132" width="40" height="196" rx="8" fill="#ffffff"/>
+    <rect x="186" y="180" width="140" height="38" rx="8" fill="#ffffff"/>
+    <path d="M256 340c-14 22-22 34-22 46a22 22 0 0 0 44 0c0-12-8-24-22-46z" fill="#fa002d"/>
+  </g>
 </svg>
